@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e6c4; /* Light festive background */
+    color: #4a148c; /* Deep Purple text */
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #ffcc80, #ffab40); /* Gold/Orange Gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff8f00; /* Bright Orange/Gold */
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #c2185b; /* Deep Pink/Red Accent */
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+#giftButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+    box-shadow: 0 4px #388e3c;
+    margin-bottom: 20px;
+}
+
+#giftButton:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px #388e3c;
+}
+
+#giftButton:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #388e3c;
+}
+
+#videoContainer {
+    margin-top: 30px;
+    /* This centers the iframe/video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.punchline {
+    font-size: 1.3em;
+    color: #ff8f00;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
